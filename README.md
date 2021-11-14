@@ -10,3 +10,6 @@ export FLASK_ENV=development
 
 Run:
 flask run
+
+References:
+https://flask.palletsprojects.com/en/2.0.x/tutorial/
