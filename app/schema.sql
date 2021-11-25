@@ -26,10 +26,13 @@ CREATE TABLE users (
 DROP TABLE IF EXISTS classes;
 CREATE TABLE classes (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_id INTEGER,
+    user_id INTEGER NOT NULL,
     teacher_id INTEGER,
-    mat_room_id INTEGER,
-    level_id INTEGER,
+    mat_room_id INTEGER NOT NULL,
+    level_id INTEGER NOT NULL,
+    day_of_the_week INTEGER NOT NULL,
+    time TEXT NOT NULL,
+    duration TEXT NOT NULL,
     FOREIGN KEY(user_id) REFERENCES users(id),
     FOREIGN KEY(teacher_id) REFERENCES teachers(id),
     FOREIGN KEY(mat_room_id) REFERENCES mat_rooms(id),
