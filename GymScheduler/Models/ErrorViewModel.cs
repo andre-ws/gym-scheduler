@@ -1,4 +1,4 @@
-namespace gym_scheduler.Models;
+namespace GymScheduler.Models;
 
 public class ErrorViewModel
 {

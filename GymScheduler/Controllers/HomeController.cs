@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using gym_scheduler.Models;
+using GymScheduler.Models;
 
-namespace gym_scheduler.Controllers;
+namespace GymScheduler.Controllers;
 
 public class HomeController : Controller
 {
