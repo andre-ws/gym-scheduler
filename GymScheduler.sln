@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymScheduler", "GymSchedule
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymScheduler.Core", "GymScheduler.Core\GymScheduler.Core.csproj", "{99CE26A6-79E9-4824-96AA-DB673555EF47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymScheduler.Model", "GymScheduler.Model\GymScheduler.Model.csproj", "{F8C3E853-E783-4318-9EBF-6868AAC5F7A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{99CE26A6-79E9-4824-96AA-DB673555EF47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99CE26A6-79E9-4824-96AA-DB673555EF47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99CE26A6-79E9-4824-96AA-DB673555EF47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C3E853-E783-4318-9EBF-6868AAC5F7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C3E853-E783-4318-9EBF-6868AAC5F7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C3E853-E783-4318-9EBF-6868AAC5F7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C3E853-E783-4318-9EBF-6868AAC5F7A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
