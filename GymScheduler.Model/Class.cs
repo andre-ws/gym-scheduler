@@ -19,8 +19,7 @@ namespace GymScheduler.Model
         [Required]
         public int UserId { get; set; }
 
-        [Required]
-        public int TeacherId { get; set; }
+        public int? TeacherId { get; set; }
 
         [Required]
         public int MatRoomId { get; set; }
@@ -31,8 +30,7 @@ namespace GymScheduler.Model
         [Required]
         public User User { get; set; }
 
-        [Required]
-        public Teacher Teacher { get; set; }
+        public Teacher? Teacher { get; set; }
 
         [Required]
         public MatRoom MatRoom { get; set; }
