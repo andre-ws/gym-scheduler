@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using System;
 using System.Data.Common;
 
-namespace GymScheduler.Tests.Common
+namespace GymScheduler.Tests.Commons
 {
     public class SqliteInMemoryGymSchedulerContextTest : GymSchedulerContextBaseTest, IDisposable
     {

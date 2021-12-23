@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace GymScheduler.Tests
+namespace GymScheduler.Tests.Commons
 {
     public class GymSchedulerContextBaseTest
     {
