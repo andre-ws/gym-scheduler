@@ -6,11 +6,13 @@ namespace GymScheduler.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<HomeController> log;
+    private readonly GymSchedulerDbContext dbContext;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> log, GymSchedulerDbContext dbContext)
     {
-        _logger = logger;
+        this.log = log;
+        this.dbContext = dbContext;
     }
 
     public IActionResult Index()

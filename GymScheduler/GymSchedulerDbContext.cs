@@ -13,7 +13,8 @@ namespace GymScheduler
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<User> Users { get; set; }
 
-        public GymSchedulerDbContext()
+        public GymSchedulerDbContext(DbContextOptions<GymSchedulerDbContext> options)
+            : base(options)
         {
             // TODO: Move configuration to user secrets file
             // https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings
