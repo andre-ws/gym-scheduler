@@ -1,7 +1,9 @@
-﻿using GymScheduler.Controllers;
+﻿using FluentAssertions;
+using GymScheduler.Controllers;
 using GymScheduler.Tests.Commons;
 using Microsoft.Extensions.Logging;
 using Moq;
+using System;
 using Xunit;
 using static GymScheduler.Controllers.AuthController;
 
@@ -14,9 +16,9 @@ namespace GymScheduler.Tests
         {
             var controller = CreateController();
 
-            var result = controller.Register(new RegisterUserRequest());
-
-            Assert.NotNull(result);
+            controller
+                .Invoking(c => c.Register(new RegisterUserRequest()))
+                .Should().Throw<Exception>().WithMessage("Invalid Username");
         }
 
         private AuthController CreateController()

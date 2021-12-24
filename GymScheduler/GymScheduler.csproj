@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GymScheduler.Commons\GymScheduler.Commons.csproj" />
     <ProjectReference Include="..\GymScheduler.Persistence\GymScheduler.Persistence.csproj" />
   </ItemGroup>
 

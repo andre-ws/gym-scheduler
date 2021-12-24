@@ -1,3 +1,5 @@
+using GymScheduler.Commons.Extensions;
+using GymScheduler.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GymScheduler.Controllers
@@ -18,6 +20,9 @@ namespace GymScheduler.Controllers
         [HttpGet(Name = "register")]
         public RegisterUserResponse Register(RegisterUserRequest request)
         {
+            if (request.UserName.IsNullOrWhitespace() || request.UserName.Length < 5)
+                throw new Exception("Invalid Username");
+
             return null;
         }
 
