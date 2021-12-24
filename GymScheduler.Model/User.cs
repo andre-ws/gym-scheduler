@@ -13,6 +13,7 @@ namespace GymScheduler.Model
         public int Id { get; set; }
 
         [Required]
+        [MinLength(5)]
         [MaxLength(255)]
         public string UserName { get; set; }
 
