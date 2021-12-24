@@ -1,6 +1,6 @@
-﻿using System.Diagnostics;
+﻿using GymScheduler.Models;
 using Microsoft.AspNetCore.Mvc;
-using GymScheduler.Models;
+using System.Diagnostics;
 
 namespace GymScheduler.Controllers;
 

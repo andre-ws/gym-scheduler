@@ -23,11 +23,7 @@ namespace GymScheduler.Tests.Commons
 
         private static DbConnection CreateInMemoryDatabase()
         {
-            var connection = new SqliteConnection("Filename=:memory:");
-
-            connection.Open();
-
-            return connection;
+            return new SqliteConnection("Filename=:memory:");
         }
     }
 }

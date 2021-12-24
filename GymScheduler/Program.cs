@@ -1,7 +1,20 @@
+using GymScheduler;
+using Microsoft.Data.Sqlite;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connString = builder.Configuration.GetConnectionString("DefaultConnection");
+var conn = new SqliteConnection(connString);
+builder.Services.AddDbContext<GymSchedulerDbContext>(options =>
+{
+    options.UseSqlite(conn);
+    using var db = new GymSchedulerDbContext(options.Options);
+    db.Database.EnsureCreated();
+});
 
 var app = builder.Build();
 
